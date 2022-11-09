@@ -1,3 +1,79 @@
+// ***************** LEARNING PHASE 4 ************************
+// *********String Representations of Arrays********/
+/*
+There are two functions that return string representations of an array: join() and
+toString(). Both functions return a string containing the elements of the array delimited
+by commas. Here are some examples:
+*/
+// var names = ["David", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+// var namestr = names.join();
+// console.log(namestr); // David,Cynthia,Raymond,Clayton,Mike,Jennifer
+// namestr = names.toString();
+// console.log(namestr); // David,Cynthia,Raymond,Clayton,Mike,Jennifer
+
+// *********String Representations of Arrays********/
+// Creating New Arrays from Existing Arrays
+/*
+There are two accessor functions that allow you create new arrays from existing arrays:
+concat() and splice(). The concat() function allows you to put together two or more
+arrays to create a new array, and the splice() function allows you to create a new array
+from a subset of an existing array.
+*/
+// var cisDept = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+// var dmpDept = ["Raymond", "Cynthia", "Bryan"];
+// var itDiv = cisDept.concat(dmpDept);
+// console.log(itDiv);
+// itDiv = dmpDept.concat(cisDept);
+// console.log(itDiv);
+
+/*
+The splice() function creates a new array from the contents of an existing array. The
+arguments to the function are the starting position for taking the splice and the number
+of elements to take from the existing array.
+*/
+// var itDiv = ["Mike","Clayton","Terrill","Raymond","Cynthia","Danny","Jennifer"];
+// var dmpDept = itDiv.splice(3,3);
+// var cisDept = itDiv;
+// console.log(dmpDept); // Raymond,Cynthia,Danny
+// console.log(cisDept); // Mike,Clayton,Terrill,Jennifer
+/*
+There are other uses for splice() as well, such as modifying an array by adding
+and/or removing elements.
+*/
+
+// *********Mutator Functions********/
+// push(); to add element at the end on an array
+// unshift(); to add element at the beginning of an array
+// pop(); to remove element from the end of an array
+// shift(); to remove element from the beginning of an array
+
+// var nums = [2,3,4,5];
+// nums.unshift(1);
+// console.log(nums);
+
+// var nums = [2,3,4,5];
+// nums.push(6);
+// console.log(nums);
+
+// var nums = [2,3,4,5];
+// nums.unshift(0,1);
+// console.log(nums);
+/*
+The second call to unshift() demonstrates that you can add multiple elements to an
+array with one call to the function.
+*/
+
+
+// ***************** LEARNING PHASE (revision) ************************
+// (1) sum += nums[i]
+// (2) nums[i] = i + 1
+/* 
+   (3) Accessor Function 
+   (position or index accessor function)
+   indexOf() and lastIndexOf()
+   (4) .split() --- to create array from a string (like a sentence)
+*/
+
 // ***************** LEARNING PHASE 3 ************************
 //********* Accessor Functions *****/
 // Accessor Functions are used to access the elements of an array
@@ -8,27 +84,27 @@ the index position of the argument. If the argument is not found
 in the array, the function returns -1.
 */
 //import readline module
-var readline = require('readline');
-// I think this is the part that allows the commandline interaction
-var rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdin,
-});
+// var readline = require('readline');
+// // I think this is the part that allows the commandline interaction
+// var rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdin,
+// });
 
-var names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer"];
+// var names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer"];
 
-// this prompts the user and assigns the user input to the variable name
-rl.question("Enter a name to search for: ", function(name) {
-  var position = names.indexOf(name);
-  if (position >= 0) {
-    console.log("Found " + name + " at position " + position);
-  }
-  else {
-    console.log(name + " not found in array.");
+// // this prompts the user and assigns the user input to the variable name
+// rl.question("Enter a name to search for: ", function(name) {
+//   var position = names.indexOf(name);
+//   if (position >= 0) {
+//     console.log("Found " + name + " at position " + position);
+//   }
+//   else {
+//     console.log(name + " not found in array.");
 
-  //this closes the I/O stream, without this line the commandline prompt will remain open
-  rl.close();
-}});
+//   //this closes the I/O stream, without this line the commandline prompt will remain open
+//   rl.close();
+// }});
 // If you run this program and enter Cynthia, the program will output:
 // Found Cynthia at position 1
 // If you enter Joe, the output is:
