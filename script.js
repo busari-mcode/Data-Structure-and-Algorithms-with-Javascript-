@@ -1,3 +1,21 @@
+// *************** LEARNING PHASE ****************
+// var firstName = ["John", "Mike", "Brown", "Dipesh"];
+// var lastName = ["Cynthia", "Raymond", "Jennifer", "Bryan"];
+// var sentence = "What going on guys?";
+// var newName1 = firstName.concat(lastName);
+// console.log(newName1);
+// console.log(firstName);
+// var newName2 = firstName.splice(2, 2);
+// console.log(newName2);
+// var newList1 = firstName.join();
+// console.log(newList1);
+// var newList2 = lastName.toString();
+// console.log(newList2);
+// var newSentenceArray = sentence.split(" ");
+// console.log(newSentenceArray);
+
+
+
 // ***************** LEARNING PHASE 4 ************************
 // *********String Representations of Arrays********/
 /*
@@ -11,7 +29,7 @@ by commas. Here are some examples:
 // namestr = names.toString();
 // console.log(namestr); // David,Cynthia,Raymond,Clayton,Mike,Jennifer
 
-// *********String Representations of Arrays********/
+// ********* String Representations of Arrays ********/
 // Creating New Arrays from Existing Arrays
 /*
 There are two accessor functions that allow you create new arrays from existing arrays:
@@ -41,10 +59,10 @@ There are other uses for splice() as well, such as modifying an array by adding
 and/or removing elements.
 */
 
-// *********Mutator Functions********/
+// ********* Mutator Functions ********/
 // push(); to add element at the end on an array
-// unshift(); to add element at the beginning of an array
 // pop(); to remove element from the end of an array
+// unshift(); to add element at the beginning of an array
 // shift(); to remove element from the beginning of an array
 
 // var nums = [2,3,4,5];
