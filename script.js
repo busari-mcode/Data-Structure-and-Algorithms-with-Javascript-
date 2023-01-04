@@ -1,4 +1,23 @@
-// *************** LEARNING PHASE ****************
+// *************** LEARNING PHASE 5 ****************************************
+// *************** Adding and Removing Elements from the Middle of an Array **********
+// var nums = [1,2,3,7,8,9];
+// var newElements = [4,5,6];
+// nums.splice(3,0,newElements);
+// console.log(nums); // [ 1, 2, 3, [ 4, 5, 6 ], 7, 8, 9 ]
+
+// more example
+// var nums = [1,2,3,7,8,9];
+// nums.splice(3,0,4,5,6);
+// console.log(nums); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+// *************** LEARNING PHASE REVISION ****************
+// let myArray = [1, 2, 3, 4, 5];
+// sum = 0;
+// for (var i=0; i<myArray.length; i++) {
+//    sum += myArray[i];
+//    console.log(sum)
+// }
+// *************** LEARNING PHASE SUMMARY ****************
 // var firstName = ["John", "Mike", "Brown", "Dipesh"];
 // var lastName = ["Cynthia", "Raymond", "Jennifer", "Bryan"];
 // var sentence = "What going on guys?";
