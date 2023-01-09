@@ -1,3 +1,43 @@
+// *************** LEARNING PHASE 7 ****************************************
+// *************** Iterator Functions **********
+
+
+// LEARNING PHASE 4 - 6 IS ALL ABOUT MUTATOR FUNCTIONS
+// *************** LEARNING PHASE 6 ****************************************
+// *************** Putting Array Elements in Order **********
+/*
+ The last two mutator functions are used to arrange array elements into some type of
+ order. The first of these, reverse(), reverses the order of the elements of an array. Here
+ is an example of its use:
+*/
+// var nums = [1,2,3,4,5];
+// nums.reverse();
+// console.log(nums); // [ 5, 4, 3, 2, 1 ]
+
+/*
+We often need to sort the elements of an array into order. The mutator function for this
+task, sort(), works very well with strings:
+*/
+// var names = ["David","Mike","Cynthia","Clayton","Bryan","Raymond"];
+// names.sort();
+// console.log(names); // [ 'Bryan', 'Clayton', 'Cynthia', 'David', 'Mike', 'Raymond' ]
+
+// But sort() does not work so well with numbers:
+// var nums = [3,1,2,100,4,200];
+// nums.sort();
+// console.log(nums); // [ 1, 100, 2, 200, 3, 4 ]
+
+/*
+We can make the sort() function work correctly for numbers by passing in an ordering function as the
+first argument to the function, which sort() will then use to sort the array elements.
+*/
+// function compare(num1, num2) {
+//    return num1 - num2;
+//    }
+//    var nums = [3,1,2,100,4,200];
+//    nums.sort(compare);
+//    console.log(nums); // [ 1, 2, 3, 4, 100, 200 ]
+   
 // *************** LEARNING PHASE 5 ****************************************
 // *************** Adding and Removing Elements from the Middle of an Array **********
 // var nums = [1,2,3,7,8,9];
