@@ -1,6 +1,68 @@
 // *************** LEARNING PHASE 7 ****************************************
-// *************** Iterator Functions **********
+// *************** Iterator Functions **************************************
+// *************** Non–Array-Generating Iterator Functions *******************
+/*
+The first of these functions is forEach(). This function takes a function as an argument
+and applies the called function to each element of an array. Here is an example of how
+it works:
+*/
+// function square(num) {
+//    console.log(num, num * num);
+//    }
+//    var nums = [1,2,3,4,5,6,7,8,9,10];
+//    nums.forEach(square);
 
+/*
+The next iterator function, every(), applies a Boolean function to an array and returns
+true if the function can return true for every element in the array. Here is an example:
+*/
+// function isEven(num) {
+//    return num % 2 == 0;
+//    }
+//    var nums = [2,4,6,8,10, 11];
+//    var even = nums.every(isEven);
+//    if (even) {
+//    console.log("all numbers are even");
+//    }
+//    else {
+//    console.log("not all numbers are even");
+//    }
+
+/*
+The some() function will take a Boolean function and return true if at least one of the
+elements in the array meets the criterion of the Boolean function. For example:
+*/
+// function isEven(num) {
+//    return num % 2 == 0;
+//    }
+//    var nums = [1,2,3,4,5,6,7,8,9,10];
+//    var someEven = nums.some(isEven);
+//    if (someEven) {
+//    console.log("some numbers are even");
+//    }
+//    else {
+//    console.log("no numbers are even");
+//    }
+
+/*
+The reduce() function applies a function to an accumulator and the successive elements
+of an array until the end of the array is reached, yielding a single value. Here is an example
+of using reduce() to compute the sum of the elements of an array:
+*/
+// function add(runningTotal, currentValue) {
+//    return runningTotal + currentValue;
+//    }
+//    var nums = [1,2,3,4,5,6,7,8,9,10];
+//    var sum = nums.reduce(add);
+//    console.log(sum); // displays 55
+
+// We can also use reduce() with strings to perform concatenation:
+// function concat(accumulatedString, item) {
+//    return accumulatedString + item;
+//    }
+//    var words = ["the ", "quick ","brown ", "fox "];
+//    var sentence = words.reduce(concat);
+//    console.log(sentence); // displays: the quick brown fox
 
 // LEARNING PHASE 4 - 6 IS ALL ABOUT MUTATOR FUNCTIONS
 // *************** LEARNING PHASE 6 ****************************************
