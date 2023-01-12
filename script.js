@@ -1,3 +1,26 @@
+// ******* Revision **************************
+// To pass in 1 - 20 into an empty array
+// var myArray = [];
+// for (var i = 0; i < 20; i++) {
+//    myArray[i] = i + 1
+// }
+// console.log(myArray)
+
+// To find the sum of 1 - 20
+// var myArray = [];
+// for (var i = 0; i < 20; i++) {
+//    myArray[i] = i + 1
+// }
+// console.log(myArray)
+
+// function add(runningTotal, currentValue) {
+//    return runningTotal + currentValue;
+// }
+// var sum = myArray.reduce(add);
+// console.log("The sum of the elements in the array above is: ");
+// console.log(sum);
+
+
 // *************** LEARNING PHASE 8 ****************************************
 // *************** Iterator Functions That Return a New Array *******************
 /*
@@ -35,6 +58,7 @@ consisting of those elements that satisfy the Boolean function. Here is an examp
 //    var nums = [];
 //    for (var i = 0; i < 20; ++i) {
 //    nums[i] = i+1;
+//    // nums[i] indicate each member of the array
 //    }
 //    var evens = nums.filter(isEven);
 //    console.log("Even numbers: ");
