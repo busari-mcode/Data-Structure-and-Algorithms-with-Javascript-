@@ -1,3 +1,36 @@
+// *************** LEARNING PHASE 9 ****************************************
+//*************** Two-Dimensional and Multidimensional Arrays ******************
+// Two-Dimensional Arrays
+// var grades = [[89, 77, 78],[76, 82, 81],[91, 94, 89]];
+// console.log(grades[2][2]); // displays 89
+
+//********* Arrays in Objects **********
+// function weekTemps() {
+//    this.dataStore = [];
+//    this.add = add;
+//    this.average = average;
+//    }
+//    function add(temp) {
+//    this.dataStore.push(temp);
+//    }
+//    function average() {
+//    var total = 0;
+//    for (var i = 0; i < this.dataStore.length; ++i) {
+//    total += this.dataStore[i];
+//    }
+//    return total / this.dataStore.length;
+//    }
+//    var thisWeek = new weekTemps();
+//    thisWeek.add(52);
+//    thisWeek.add(55);
+//    thisWeek.add(61);
+//    thisWeek.add(65);
+//    thisWeek.add(55);
+//    thisWeek.add(50);
+//    thisWeek.add(52);
+//    thisWeek.add(49);
+//    console.log(thisWeek.average()); // displays 54.875
+
 // ******* Revision **************************
 // To pass in 1 - 20 into an empty array
 // var myArray = [];
@@ -12,7 +45,6 @@
 //    myArray[i] = i + 1
 // }
 // console.log(myArray)
-
 // function add(runningTotal, currentValue) {
 //    return runningTotal + currentValue;
 // }
